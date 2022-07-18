@@ -5,15 +5,12 @@ const Home = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
   };
-
-  console.log(watch("password"));
 
   return (
     <main>
